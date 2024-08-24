@@ -180,6 +180,11 @@ def display_top_n_rows(df,n=10):
     """Display the top N rows of the DataFrame."""
     print(df.head(n))
 
+def display_mode_travel_time(df):
+mode_travel_time = df['Trip Duration'].mode()[0]
+    """Display mode of travel time."""
+print(f'\nThe mode (most frequent) travel time is: {mode_travel_time} second.\n')
+
 def main():
     while True:
         city, month, day = get_filters()
@@ -193,6 +198,11 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df,city)
+        display_data(df)
+
+        #Call the new function to display mode of travel time
+        display_mode_travel_time(df)
+
         display_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
