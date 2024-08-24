@@ -176,11 +176,19 @@ def display_data(df):
             if user_input != 'yes':
                 print('Thank you')
                 break
+def display_top_n_rows(df,n=10):
+    """Display the top N rows of the DataFrame."""
+    print(df.head(n))
+
 def main():
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
-
+       
+        # Display top 10 rows
+        display_top_n_rows(df)
+       
+       #Continue with existing functions
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
