@@ -8,7 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 def get_filters():
     """
-    Asks user to specify a city, month, and day to analyze.
+    prompts the user to specify a city, month, and day for data analysis.
 
     Returns:
         (str) city - name of the city to analyze
@@ -49,7 +49,7 @@ def get_filters():
 
 def load_data(city, month, day):
     """
-    Loads data for the specified city and filters by month and day if applicable.
+    Loads Bikeshare data for the selected city and filters by month and day if specified.
 
     Args:
         (str) city - name of the city to analyze
@@ -79,7 +79,9 @@ def load_data(city, month, day):
 
 
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
+    """
+    Displays statistics on the most frequent times of travel.
+    """
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
