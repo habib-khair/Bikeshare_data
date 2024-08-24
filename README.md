@@ -7,7 +7,8 @@ I've finished The Explore US Bikeshare Data project in 24/7/2024 The README.md f
 The Explore US Bikeshare Data project
 
 ### Description
-Describe what your project is about and what it does
+During this project, we had to use Pyhton to explore data related to bike share systems for three major cities in the USA - Chicago,New York City, and Washington.
+First we had to write a code to import the data and answer questions about it by computing descriptive statists,Second we wrote a script that takes raw input to create interactive experience in the terminate to present the statistics.
 
 ### Files used
 chicago.csv 
